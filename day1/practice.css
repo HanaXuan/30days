@@ -1,0 +1,133 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #98f5d6;
+}
+.card{
+    margin: 120px auto;
+    height: 400px;
+    width: 320px;
+    background: #155f5f;
+    padding:20px;
+    border-radius: 8%;
+}
+.card_heartcart{
+    display: flex;
+    cursor: pointer;
+}
+.card_heartcart img{
+    transform: scale(70%);
+    margin-top: -70px;
+    transition: 0.5s;
+}
+.card_heartcart i{
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+.card_title, .card_price{
+    color:white ;
+    font-weight: bold;
+    text-align: right;
+    font-size: 20px;
+    margin-top: -70px;
+    transition: 0.5s;
+}
+.card_title{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 50px;
+}
+.card_price{
+    margin-top: -30px;
+}
+.card_type, .card_color{
+    display:flex;
+    align-items: center;
+    color: #98f5d6;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+.card_type span{
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background: white;
+    color:#98f5d6;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.card_color{
+    margin-top: -20px;
+}
+.card_color span{
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.card_color-pink{
+    background: #F08080;
+}
+.card_color-white{
+    background: white;
+}
+.card_action{
+    margin-left:150px;
+    margin-top: -40px;
+    transition: 0.5s;
+}
+.card_action button{
+    transform: scale(150%);
+    margin: 0 15px;
+    font-weight: bold;
+    color:white;
+    background:#ec3b3b;
+    border: None;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card:hover .card_heartcart img{
+    transform: translate(30px, -30px) scale(75%);
+}
+.card:hover .card_title, .card:hover .card_price{
+    transform: translatey(-20px) scale(80%);
+}
+.card_type{
+    margin-top:200px;
+}
+.card_type, .card_color, .card_action{
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover .card_type{
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 100%;
+}
+.card:hover .card_type, .card_color, .card_action{
+    visibility: visible;
+    opacity: 100%;
+}
+.card_action button:hover{
+    transform: scale(170%);
+}
+.card_type span:hover{
+    transform: scale(150%);
+}
+.card_color span:hover{
+    transform: scale(150%);
+}
+.card_heartcart i:hover{
+    transform: scale(150%);
+}
